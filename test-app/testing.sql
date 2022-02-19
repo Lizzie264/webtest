@@ -1,0 +1,13 @@
+CREATE DATABASE webtest;
+USE webtest;
+
+DROP TABLE IF EXISTS persona;
+CREATE TABLE persona(
+    idPerson INT NOT NULL AUTO_INCREMENT,
+	namePerson VARCHAR(50) NOT NULL,
+    sex VARCHAR(15) NOT NULL,
+    direction VARCHAR(50) NOT NULL,
+    mail VARCHAR(50) NOT NULL,
+    telephone VARCHAR(15) NOT NULL,
+    PRIMARY KEY (idPerson)
+) ENGINE=INNODB;
